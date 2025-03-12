@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<link rel="stylesheet" href="src/css/style.css" />
+		<script src="src/js/app.js" defer></script>
+	</head>
+	<body>
+		<section class="registration-form">
+			<form id="registration-form" action="#" method="#">
+				<input id="user_id" type="hidden" placeholder="" value="" />
+				<div class="form-group">
+					<label for="user_name">Enter User Name</label>
+					<input
+						type="text"
+						data-category="user_name"
+						id="user_name"
+						placeholder="user name"
+						required
+					/>
+				</div>
+				<div class="form-group">
+					<label for="user_surname">Enter User Surname</label>
+					<input
+						type="text"
+						id="user_surname"
+						placeholder="user surname"
+						required
+					/>
+				</div>
+
+				<div class="form-group">
+					<label for="user_phone">Enter phone number</label>
+					<input
+						type="number"
+						id="user_phone"
+						placeholder="phone number"
+						required
+					/>
+				</div>
+
+				<div class="form-group">
+					<label for="user_personal-id">Enter personal id</label>
+					<input
+						type="number"
+						id="user_personal-id"
+						placeholder="personal id"
+						required
+					/>
+				</div>
+
+				<div class="form-group">
+					<label for="user_email">Enter Email</label>
+					<input type="email" id="user_email" placeholder="email" required />
+				</div>
+
+				<div class="form-group">
+					<label for="user_zip-code">Enter zip code</label>
+					<input
+						type="text"
+						id="user_zip-code"
+						placeholder="zip code"
+						required
+					/>
+				</div>
+
+				<div class="form-group">
+					<label for="user_gender">Enter gender</label>
+					<input type="text" id="user_gender" placeholder="gender" required />
+				</div>
+
+				<div class="form-group">
+					<button class="btn" type="submit">Submit</button>
+				</div>
+			</form>
+		</section>
+
+		<section class="form">
+			<form action="/save-user" id="form" novalidate>
+				<div class="form-group">
+					<label for="name">Name</label>
+					<input type="text" id="name" name="name" maxlength="8" required />
+					<span class="error-message"></span>
+				</div>
+				<div class="form-group">
+					<label for="age">Age</label>
+					<input type="number" id="age" name="age" min="0" max="10" />
+					<span class="error-message"></span>
+				</div>
+				<div class="form-group">
+					<label for="email">Email</label>
+					<input type="email" id="email" name="email" required />
+					<span class="error-message"></span>
+				</div>
+				<div class="form-group">
+					<label for="personal_number">personal_number</label>
+					<input
+						type="text"
+						id="personal_number"
+						name="personal_number"
+						required
+					/>
+					<span class="error-message"></span>
+				</div>
+				<div class="form-group">
+					<label for="mobile_number">mobile_number</label>
+					<input type="text" id="mobile_number" name="mobile_number" required />
+					<span class="error-message"></span>
+				</div>
+
+				<div class="form-group">
+					<label for="password">Password</label>
+					<input type="password" id="password" name="password" required />
+					<span class="error-message"></span>
+				</div>
+				<div class="form-group">
+					<label for="confirm-password">confirm Password</label>
+					<input
+						type="password"
+						id="confirm-password"
+						name="confirm-password"
+						required
+					/>
+					<span class="error-message"></span>
+				</div>
+
+				<button type="submit">submit</button>
+			</form>
+		</section>
+
+		<!-- dialog, modal -->
+		<div class="modal" id="reg-confirmation">
+			<div class="content">
+				<p>this is modal content</p>
+				<button class="close-modal">close</button>
+			</div>
+		</div>
+		<dialog id="confirmation-dialog">
+			<p>this is dialog content</p>
+			<button class="close-dialog">close</button>
+		</dialog>
+	</body>
+</html>
